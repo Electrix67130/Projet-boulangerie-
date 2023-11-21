@@ -1,0 +1,122 @@
+/*font family*/
+.banner-section-col2 h1,
+.natural-life-section-h,
+.natural-life-section-col2 h3 {
+  font-family: "DM Sans", sans-serif;
+}
+.banner-section-col1 p,
+.banner-section-col2 p,
+.banner-section-col2 .wp-block-button__link,
+.natural-life-section-p,
+.natural-life-section-col2 p {
+  font-family: "Albert Sans", sans-serif;
+}
+
+/* banner-section */
+.banner-section-col2 h1{
+  margin: 0;
+}
+.banner-section-cover {
+  gap: 0em !important;
+}
+.banner-section-col1 p {
+  transform: matrix(0, -1, 1, 0, 0, 0) translateY(-50%);
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: -20%;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  width: max-content;
+}
+.banner-section-img {
+  width: 100% !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.banner-section-col2 h1 {
+  text-align: left;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 32px;
+  line-height: 55px;
+}
+.banner-section-col2 h1:hover {
+  text-decoration: none;
+  color: #609a33;
+}
+.banner-section-col2 p {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 500;
+  text-align: start;
+  margin-bottom: 0px;
+  margin-top: -25px;
+  margin-left: 0px !important;
+}
+.banner-section-col2 .wp-block-button__link {
+  font-weight: 600;
+}
+.banner-section-col2 .wp-block-button__link:hover {
+  background-color: #1b1b1b !important;
+  color: #ffffff;
+}
+
+/* Natural Life section */
+.natural-life-section h2{
+  padding: 0 !important;
+}
+.natural-life-section-p {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 8px;
+  margin-bottom: 0px;
+}
+.natural-life-section-h {
+  font-size: 25px;
+  line-height: 50px;
+  color: #121212;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.category1 {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: 0% !important;
+}
+.category2 {
+  width: 100% !important;
+  height: 100% !important;
+
+  margin-top: 0% !important;
+}
+.natural-life-section-col {
+  border-radius: 10px;
+  background-color: #f3f6ea;
+  padding: 25px;
+}
+.natural-life-section-col2 img {
+  width: 100% !important;
+  border-radius: 10px;
+}
+.natural-life-section-col2 p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #717171;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 0%;
+}
+.natural-life-section-col2 h3 {
+  font-size: 20px;
+  line-height: 22px;
+  color: #121212;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-top: 2%;
+  margin-bottom: 0%;
+}
