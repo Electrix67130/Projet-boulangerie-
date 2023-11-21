@@ -3,19 +3,21 @@ version: '3.1'
 services:
 
   wordpress:
+    container_name: "wordpress"
     image: wordpress
     restart: always
     ports:
-      - 8080:80
+      - 80:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: boulangerie_user
       WORDPRESS_DB_PASSWORD: boulangerie_pwd
       WORDPRESS_DB_NAME: database
     volumes:
-      - wordpress:/var/www/html
+      - ./wordpress:/var/www/html
 
   db:
+    container_name: "wordpress-database"
     image: mysql:5.7
     restart: always
     environment:
@@ -24,8 +26,4 @@ services:
       MYSQL_PASSWORD: boulangerie_pwd
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
-      - db:/var/lib/mysql
-
-volumes:
-  wordpress:
-  db:
+      - ./db:/var/lib/mysql
