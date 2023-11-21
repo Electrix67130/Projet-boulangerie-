@@ -7,23 +7,25 @@ services:
     image: wordpress
     restart: always
     ports:
-      - 80:80
+      - "80:80"
+    depends_on:
+      - db
     environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: boulangerie_user
-      WORDPRESS_DB_PASSWORD: boulangerie_pwd
-      WORDPRESS_DB_NAME: database
+      WORDPRESS_DB_HOST: "db"
+      WORDPRESS_DB_USER: "boulangerie_user"
+      WORDPRESS_DB_PASSWORD: "boulangerie_pwd"
+      WORDPRESS_DB_NAME: "database"
     volumes:
       - ./wordpress:/var/www/html
 
   db:
-    container_name: "wordpress-database"
-    image: mysql:5.7
+    container_name: "database"
+    image: mysql:8
     restart: always
     environment:
-      MYSQL_DATABASE: database
-      MYSQL_USER: boulangerie_user
-      MYSQL_PASSWORD: boulangerie_pwd
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_DATABASE: "database"
+      MYSQL_USER: "boulangerie_user"
+      MYSQL_PASSWORD: "boulangerie_pwd"
+      MYSQL_ROOT_PASSWORD: "root"
     volumes:
       - ./db:/var/lib/mysql
